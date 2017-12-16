@@ -38,6 +38,5 @@ int main()
         }
         cout << endl;
         cout << "Remaining card: " << discarded[cards-1] << endl;
-
     }
 }
