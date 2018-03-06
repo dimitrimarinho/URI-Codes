@@ -18,7 +18,7 @@ int main(){
 	N = N - (10 * (N/10));
 	cout << N/5 << " nota(s) de R$ 5,00" << endl;
 	N = N - (5 * (N/5));
-	cout << (int)N/2 << " nota(s) de R$ 2,00" << endl;
+	cout << N/2 << " nota(s) de R$ 2,00" << endl;
 	N = N - (2* (N/2));
 	cout << N << " nota(s) de R$ 1,00" << endl;
 
