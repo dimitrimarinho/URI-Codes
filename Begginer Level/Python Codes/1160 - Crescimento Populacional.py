@@ -1,3 +1,6 @@
+# Name of the problem: Crescimento Populacional
+# Link: https://www.urionlinejudge.com.br/judge/pt/problems/view/1160
+
 T = int(input())
 for n_cases in range(T):
     PA, PB, G1, G2 = map(float, input().split())
