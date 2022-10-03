@@ -14,14 +14,14 @@ public class Beecrowd_1022_TDA_Racional {
         for(int i = 0; i < N; i++){
 
             int N1 = input.nextInt();
-			char barra1 = input.next().charAt(0);
-			int D1 = input.nextInt();
+	    char barra1 = input.next().charAt(0);
+	    int D1 = input.nextInt();
 			
-			char operacao = input.next().charAt(0);
+	    char operacao = input.next().charAt(0);
 			
-			int N2 = input.nextInt();
-			char barra2 = input.next().charAt(0);
-			int D2 = input.nextInt();
+	    int N2 = input.nextInt();
+	    char barra2 = input.next().charAt(0);
+	    int D2 = input.nextInt();
             
             input.nextLine(); // esvazia o buffer do teclado
 			
