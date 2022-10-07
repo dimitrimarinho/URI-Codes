@@ -18,9 +18,9 @@ public class Beecrowd_3357_Rico_do_Mate {
 
         int N = input.nextInt();
 
-        double L = input.nextDouble();
+        double L = input.nextDouble() * 10;
 
-        double Q = input.nextDouble();
+        double Q = input.nextDouble() * 10;
 
         List<String> roda = new ArrayList<>();
         for (int i = 0; i < N; i++) {
@@ -28,27 +28,19 @@ public class Beecrowd_3357_Rico_do_Mate {
             roda.add(nome);
         }
 
-        int quantidade_rodadas_completas = (int) ((L * 10) / ((Q * 10) * N));
-        double restou_ultima_rodada = (L - (quantidade_rodadas_completas * Q * N));
-        double resto;
-        int idx_rico_do_mate;
+        int aux = 0;
 
-        if (restou_ultima_rodada == 0d) {
-            restou_ultima_rodada = Q;
-            idx_rico_do_mate = (int) (Math.ceil(restou_ultima_rodada / Q));
-            if(roda.size() == 1)
-                idx_rico_do_mate = 0;
-            resto = Q;
-        } else {
-            resto = restou_ultima_rodada % Q;
+        while (L > Q) {
+            L -= Q;
 
-            // Subtraindo 1, pois na lista a contagem do primeiro elemento começa a partir
-            // de 0 (então o terceiro elemento está no índice 2)
-            idx_rico_do_mate = (int) (Math.ceil(restou_ultima_rodada / Q) - 1);
+            aux++;
+
+            if(aux == N)
+                aux = 0;
         }
 
-        System.out.printf(roda.get(idx_rico_do_mate));
-        System.out.printf(" %.1f\n", resto);
+        System.out.printf(roda.get(aux));
+        System.out.printf(" %.1f\n", L/10);
 
         input.close();
     }
