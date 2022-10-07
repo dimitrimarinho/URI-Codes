@@ -1,6 +1,5 @@
 // Name of the problem: Rico do Mate
 // Link: https://www.beecrowd.com.br/judge/pt/problems/view/3357
-// Ver: https://github.com/potigol/beecrowd/blob/a2046f1e1159e12fcd8e6955d7b5806da5ca9a7d/src/3300/3357.poti
 
 import java.util.ArrayList;
 import java.util.List;
